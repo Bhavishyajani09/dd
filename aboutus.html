@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Online Furniture Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="cart-styles.css" />
+</head>
+
+<body>
+    <header class="bg-white border-bottom">
+        <div class="container-fluid px-5">
+            <div class="d-flex align-items-center py-4">
+                <a href="index.html">
+                    <img src="img/kayuu-logo-dark.svg" alt="KAYUU logo" style="width: 140px" />
+                </a>
+                <nav class="d-none d-lg-block ms-auto">
+                    <ul class="list-unstyled d-flex gap-4 m-0">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="product.html" class="text-muted text-decoration-none">Products</a></li>
+                        <li><a href="room.html" class="text-muted text-decoration-none">Rooms</a></li>
+                        <li><a href="aboutus.html" class="text-warning text-decoration-none fw-bold">About Us</a></li>
+                        <li><a href="contactus.html" class="text-muted text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="cart d-none d-lg-block position-relative ms-4 cart-icon">
+                    <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
+                    <span class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
+                </div>
+                <div class="d-lg-none d-flex align-items-center gap-3 ms-auto">
+                    <div class="cart-icon position-relative">
+                        <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
+                        <span class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
+                    </div>
+                    <button class="btn btn-light border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-bars text-muted fs-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="room.html">Rooms</a></li>
+                <li class="nav-item"><a class="nav-link active text-warning fw-bold" aria-current="page" href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="about-hero py-5 bg-light text-center">
+        <div class="container">
+            <h1 class="fw-bold mb-4" style="font-size: 3rem;">About Us</h1>
+            <p class="text-secondary fs-5">Tempus amet, sit erat malesuada lorem purus dictum pretium, posuere sagittis ultricies enim massa nisl neque augue in condimentum diam commodo ornare.</p>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="img/furniture-store-about-product-img.jpg" class="img-fluid rounded" alt="About Furniture" style="height: 400px; width: 100%; object-fit: cover;" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text ps-lg-4">
+                        <div class="founder-info d-flex align-items-center mb-4">
+                            <img src="img/furniture-store-photo-of-founder.jpg" class="rounded-circle me-3" alt="Harvey D. George" style="width: 80px; height: 80px; object-fit: cover;" />
+                            <div>
+                                <p class="text-secondary mb-4">Eu egestas felis et viverra amet dictum ornare turpis gravida orci bibendum odio sit volutpat proin at enim ultrices dolor nullam tortor ornare cursus nibh sit adipiscing adipiscing enim erat nunc donec tellus, egestas commodo netus adipiscing ultrices at phasellus ut vitae nunc malesuada id nec suspen disse sit turpis mauris biben dum amet dignissim in sit duis pharetra vehicula eget suspen disse at vitae integer gravida sagittis.</p>
+                                <h6 class="fw-bold mb-0 text-uppercase">HARVEY D. GEORGE</h6>
+                                <small class="text-muted">Founder of KAYUU</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-section py-5" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/office-interior.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row text-center text-white">
+                <div class="col-6 col-lg-3 mb-4">
+                    <h2 class="counter fw-bold mb-2" data-target="1982" style="font-size: 4rem; color: #999;">0</h2>
+                    <p class="text-uppercase fw-bold" style="color: #999; font-size: 0.9rem; letter-spacing: 2px;">FOUNDED</p>
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <h2 class="counter fw-bold mb-2" data-target="400" style="font-size: 4rem; color: #999;">0</h2>
+                    <p class="text-uppercase fw-bold" style="color: #999; font-size: 0.9rem; letter-spacing: 2px;">EMPLOYEE</p>
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <h2 class="counter fw-bold mb-2" data-target="1000" style="font-size: 4rem; color: #999;">0</h2>
+                    <p class="text-uppercase fw-bold" style="color: #999; font-size: 0.9rem; letter-spacing: 2px;">PRODUCTS</p>
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <h2 class="counter fw-bold mb-2" data-target="5" style="font-size: 4rem; color: #999;">0</h2>
+                    <p class="text-uppercase fw-bold" style="color: #999; font-size: 0.9rem; letter-spacing: 2px;">STORES</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Description -->
+    <section class="about-description py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-secondary mb-4 fs-5">Faucibus etiam lacus sollicitudin sed amet, sit vitae lorem ornare egestas nisl, diam cursus non mattis etiam sodales vestibulum arcu a, aliquam at leo condimentum etiam dui eget arcu nunc, vivamus vel facilisi auctor aliquet eu mollis accumsan fermentum ipsum ornare viverra proin eleifend ultrices est, aliquet felis vivamus praesent.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-secondary">Sit ipsum elit nisl commodo cursus diam massa nunc, commodo amet, viverra lobortis aliquam leo vitae in dictum sagittis, dui est pellentesque non est nunc aliquet magna malesuada diam nunc quis duis id nunc id ultrices cursus lorem consequat tincidunt pharetra, risus quam facilisis lectus ipsum ut mattis pretium eros tincidunt neque.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-secondary">Aliquet magna malesuada diam nunc quis duis id nunc id ultrices cursus lorem consequat tincidunt pharetra, risus quam facilisis lectus ipsum ut mattis pretium eros tincidunt neque, faucibus volutpat accumsan pretium arcu in donec et, rhoncus in sed eleifend odio gravida vitae quam donec faucibus molestie bibendum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Features Section -->
+    <section class="quality-features py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4" style="font-size: 2.5rem;">The Best Quality<br>Furniture Store In Town</h2>
+                    <p class="text-secondary mb-4">Sagittis enim, auctor ultrices dui etiam viverra nulla scelerisque in semper porttitor pharetra, tortor amet lorem cursus velit posuere tristique tempus, tincidunt non velit quis congue lectus a ullamcorper iaculis.</p>
+                    
+                    <div class="feature-list">
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-folder text-warning me-3 mt-1" style="font-size: 1.2rem;"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Huge Selection</h6>
+                                <p class="text-secondary mb-0">Sagittis enim, auctor ultrices dui etiam viverra nulla.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-folder text-warning me-3 mt-1" style="font-size: 1.2rem;"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Low Price Everyday</h6>
+                                <p class="text-secondary mb-0">Tincidunt sed eget nunc tellus viverra sapien massa cursus.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-folder text-warning me-3 mt-1" style="font-size: 1.2rem;"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Same Day Delivery</h6>
+                                <p class="text-secondary mb-0">Pretium, tempus ultrices lacus eleifend scelerisque sem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="quality-image mt-4 mt-lg-0">
+                        <img src="img/furniture-store-about-store-img.jpg" class="img-fluid rounded" alt="Quality Furniture" style="height: 400px; width: 100%; object-fit: cover;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+  <section class="newsletter-promo py-5 bg-light">
+        <div class="container rounded shadow-sm bg-white overflow-hidden p-0">
+            <div class="row g-0">
+                <div class="col-12 col-lg-6">
+                    <div class="promo-image h-100">
+                        <img src="img/newsletter-banner-img.jpg" class="img-fluid w-100 h-100 object-fit-cover"
+                            alt="Person relaxing on a couch" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-4 p-lg-5 text-center text-lg-start">
+                    <span class="tag text-uppercase text-warning fw-bold d-block mb-3">
+                        SUBSCRIBE TO OUR NEWSLETTER
+                    </span>
+                    <h2 class="newsletter-title fw-bold mb-4">
+                        See The Latest Collection & Get Special Offer
+                    </h2>
+                    <form action="#" method="post" class="newsletter-form d-flex flex-column flex-sm-row">
+                        <div class="flex-grow-1 mb-3 mb-sm-0 me-sm-2">
+                            <input type="email" name="email" class="form-control rounded-2 py-3"
+                                placeholder="Email address" required />
+                        </div>
+                        <button type="submit" class="btn btn-warning py-3 px-4 fw-bold">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                    <p class="mt-3 text-secondary">
+                        Cras interdum lectus velit nibh senectus fringilla ut.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container-fluid">
+            <div class="row justify-content-between footer-content">
+                <div class="col-lg-3 col-md-6 mb-4 footer-contact">
+                    <img src="img/kayuu-logo-white.svg" alt="KAYUU" class="footer-logo" />
+                    <p class="footer-text">3538 Torrance Blvd, Torrance, CA 90503, USA</p>
+                    <p class="footer-text">+1 123 456 7890</p>
+                    <p class="footer-text">info@example.com</p>
+                    <a href="#" class="footer-link">Visit Our Store</a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 footer-links">
+                    <h5 class="footer-heading">Useful Links</h5>
+                    <ul class="footer-list">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="product.html" class="footer-link">Products</a></li>
+                        <li><a href="room.html" class="footer-link">Rooms</a></li>
+                        <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+                        <li><a href="contactus.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 footer-links">
+                    <h5 class="footer-heading">Rooms</h5>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">Living Room</a></li>
+                        <li><a href="#" class="footer-link">Bedroom</a></li>
+                        <li><a href="#" class="footer-link">Kitchen</a></li>
+                        <li><a href="#" class="footer-link">Bath Room</a></li>
+                        <li><a href="#" class="footer-link">Home Office</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4 footer-social">
+                    <h5 class="footer-heading">Stay In Touch</h5>
+                    <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">Copyright © 2025 Online Furniture Store</p>
+            <p class="footer-powered">Powered by Online Furniture Store</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="shopping-cart-popup" class="cart-sidebar">
+        <div class="cart-header">
+            <h5 class="mb-0">Shopping Cart</h5>
+            <button id="close-cart-btn" class="btn-close"></button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-items-container"></div>
+        </div>
+        <div class="cart-footer">
+            <div id="cart-buttons" class="d-grid">
+                <a href="product.html" class="btn btn-warning fw-bold py-3">CONTINUE SHOPPING</a>
+            </div>
+            <div id="checkout-buttons" style="display: none;">
+                <div id="subtotal-section" class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="fw-bold">Subtotal:</span>
+                    <span id="cart-subtotal" class="fw-bold">$0.00</span>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-warning fw-bold py-3">VIEW CART</button>
+                    <button class="btn btn-warning fw-bold py-3">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="add-to-cart-notification" class="cart-notification"></div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="shopping-cart-popup" class="cart-sidebar">
+        <div class="cart-header">
+            <h5 class="mb-0">Shopping Cart</h5>
+            <button id="close-cart-btn" class="btn-close"></button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-items-container">
+                <div class="empty-cart text-center py-5">
+                    <p class="text-muted mb-0">No products in the cart.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div id="cart-buttons" class="d-grid">
+                <a href="product.html" class="btn btn-warning fw-bold py-3" style="background-color: #f4b942; border: none; font-size: 14px; letter-spacing: 0.5px; text-decoration: none; color: #333;">CONTINUE SHOPPING</a>
+            </div>
+            <div id="checkout-buttons" style="display: none;">
+                <div id="subtotal-section" class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="fw-bold">Subtotal:</span>
+                    <span id="cart-subtotal" class="fw-bold">$0.00</span>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-warning fw-bold py-3" style="background-color: #f4b942; border: none; font-size: 14px; letter-spacing: 0.5px; color: #333;">VIEW CART</button>
+                    <button class="btn btn-warning fw-bold py-3" style="background-color: #f4b942; border: none; font-size: 14px; letter-spacing: 0.5px; color: #333;">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart notification -->
+    <div id="add-to-cart-notification" class="cart-notification"></div>
+
+    <style>
+        .cart-sidebar {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100vh;
+            background: white;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+        }
+        .cart-sidebar.visible {
+            right: 0;
+        }
+        .cart-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cart-body {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .cart-footer {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        .cart-notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #f4b942;
+            color: #333;
+            padding: 12px 20px;
+            border-radius: 4px;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1060;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .cart-notification.show {
+            transform: translateX(0);
+        }
+        .cart-item {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+        @media (max-width: 768px) {
+            .cart-sidebar {
+                width: 100vw;
+                right: -100vw;
+            }
+        }
+        @media (max-width: 480px) {
+            .cart-sidebar {
+                width: 100vw;
+                right: -100vw;
+            }
+        }
+        
+        /* Force hide continue shopping when cart has products */
+        .cart-sidebar:has(.cart-item) #cart-buttons {
+            display: none !important;
+        }
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart-common.js"></script>
+    <script src="cart.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Online Furniture Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="cart-styles.css" />
+</head>
+
+<body>
+    <header class="bg-white border-bottom">
+        <div class="container-fluid px-5">
+            <div class="d-flex align-items-center py-4">
+                <a href="index.html">
+                    <img src="img/kayuu-logo-dark.svg" alt="KAYUU logo" style="width: 140px" />
+                </a>
+                <nav class="d-none d-lg-block ms-auto">
+                    <ul class="list-unstyled d-flex gap-4 m-0">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="product.html" class="text-muted text-decoration-none">Products</a></li>
+                        <li><a href="room.html" class="text-muted text-decoration-none">Rooms</a></li>
+                        <li><a href="aboutus.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li><a href="contactus.html" class="text-warning text-decoration-none fw-bold">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="cart d-none d-lg-block position-relative ms-4 cart-icon">
+                    <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
+                    <span class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
+                </div>
+                <div class="d-lg-none d-flex align-items-center gap-3 ms-auto">
+                    <div class="cart-icon position-relative">
+                        <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
+                        <span class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
+                    </div>
+                    <button class="btn btn-light border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-bars text-muted fs-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="room.html">Rooms</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link active text-warning fw-bold" aria-current="page" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-light text-center py-5">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold mb-3 text-dark">Contact Us</h1>
+            <p class="lead text-secondary mx-auto" style="max-width: 800px">
+                Tempus amet, sit erat malesuada lorem purus dictum pretium, posuere
+                sagittis ultricies enim massa nisi neque augue in condimentum diam
+                commodo ornare.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="bg-white py-5">
+        <div class="container py-5">
+            <div class="row g-5 justify-content-center">
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <div class="d-flex align-items-start gap-3 justify-content-center justify-content-lg-start">
+                        <i class="fa-solid fa-location-dot text-warning" style="font-size: 32px; margin-top: 4px;"></i>
+                        <div>
+                            <span class="text-warning text-uppercase fw-bold d-block mb-2" style="font-size: 12px; letter-spacing: 1px;">OUR STORE</span>
+                            <h3 class="fw-bold text-dark" style="font-size: 22px; line-height: 1.3;">
+                                3538 Torrance Blvd, Torrance, CA 90503, USA
+                            </h3>
+                        </div>
+                    </div>
+                    <p class="text-secondary my-4 mx-auto mx-lg-0" style="max-width: 600px; font-size: 16px; line-height: 1.6;">
+                        Posuere sagittis ultricies enim massa nisi neque augue in
+                        condimentum lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                        dapibus leo.
+                    </p>
+                    
+                    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start gap-4">
+                        <div class="d-flex gap-2 mb-3 mb-sm-0">
+                            <a href="#" class="text-dark fs-5 me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-dark fs-5 me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark fs-5 me-2"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="text-dark fs-5"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none fw-bold text-dark">
+                            <i class="fa-solid fa-paper-plane text-warning"></i>
+                            GET DIRECTION
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-phone text-warning" style="font-size: 18px;"></i>
+                                <div>
+                                    <span class="text-warning text-uppercase fw-bold d-block" style="font-size: 11px; letter-spacing: 1px; margin-bottom: 2px;">CALL US</span>
+                                    <div class="fw-bold text-secondary" style="font-size: 16px;">+1 123 456 7890</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-headset text-warning" style="font-size: 18px;"></i>
+                                <div>
+                                    <span class="text-warning text-uppercase fw-bold d-block" style="font-size: 11px; letter-spacing: 1px; margin-bottom: 2px;">SUPPORT</span>
+                                    <div class="fw-bold text-secondary" style="font-size: 16px;">support@email.com</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-tag text-warning" style="font-size: 18px;"></i>
+                                <div>
+                                    <span class="text-warning text-uppercase fw-bold d-block" style="font-size: 11px; letter-spacing: 1px; margin-bottom: 2px;">SALES</span>
+                                    <div class="fw-bold text-secondary" style="font-size: 16px;">sales@email.com</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-exclamation-triangle text-warning" style="font-size: 18px;"></i>
+                                <div>
+                                    <span class="text-warning text-uppercase fw-bold d-block" style="font-size: 11px; letter-spacing: 1px; margin-bottom: 2px;">COMPLAINTS</span>
+                                    <div class="fw-bold text-secondary" style="font-size: 16px;">complaints@email.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map and Contact Form Section -->
+    <section class="py-0 bg-white">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-12 col-lg-6">
+                    <div class="position-relative" style="height: 600px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10200.72304859877!2d-118.3243179237699!3d33.8340790886617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b4f9c6d48259%3A0xc3911c4d4f8287d!2s3538%20Torrance%20Blvd%2C%20Torrance%2C%20CA%2090503%2C%20USA!5e0!3m2!1sen!2sin!4v1716301234567!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="position-absolute" style="top: 20px; left: 20px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 250px;">
+                            <h6 class="fw-bold mb-1" style="font-size: 14px;">3538 Torrance Blvd</h6>
+                            <p class="text-muted mb-2" style="font-size: 12px; line-height: 1.4;">3538 Torrance Blvd, Torrance, CA 90503, USA</p>
+                            <a href="#" class="text-primary" style="font-size: 12px; text-decoration: none;">View larger map</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 bg-white d-flex align-items-center" style="min-height: 600px;">
+                    <div class="w-100" style="padding: 60px 50px;">
+                        <h2 class="fw-bold mb-4" style="font-size: 2.2rem; color: #333;">Send Us A Message</h2>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="form-label fw-bold mb-2" style="color: #666; font-size: 16px;">Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" style="padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 4px; font-size: 16px; height: 50px;" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="form-label fw-bold mb-2" style="color: #666; font-size: 16px;">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" style="padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 4px; font-size: 16px; height: 50px;" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-bold mb-2" style="color: #666; font-size: 16px;">Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" rows="6" style="padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 4px; font-size: 16px; resize: vertical; min-height: 140px;" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning fw-bold text-uppercase" style="padding: 15px 40px; font-size: 16px; letter-spacing: 1px; border-radius: 4px; border: none; background-color: #f4b942; color: #333;">
+                                SUBMIT
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+ <section class="newsletter-promo py-5 bg-light">
+        <div class="container rounded shadow-sm bg-white overflow-hidden p-0">
+            <div class="row g-0">
+                <div class="col-12 col-lg-6">
+                    <div class="promo-image h-100">
+                        <img src="img/newsletter-banner-img.jpg" class="img-fluid w-100 h-100 object-fit-cover"
+                            alt="Person relaxing on a couch" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-4 p-lg-5 text-center text-lg-start">
+                    <span class="tag text-uppercase text-warning fw-bold d-block mb-3">
+                        SUBSCRIBE TO OUR NEWSLETTER
+                    </span>
+                    <h2 class="newsletter-title fw-bold mb-4">
+                        See The Latest Collection & Get Special Offer
+                    </h2>
+                    <form action="#" method="post" class="newsletter-form d-flex flex-column flex-sm-row">
+                        <div class="flex-grow-1 mb-3 mb-sm-0 me-sm-2">
+                            <input type="email" name="email" class="form-control rounded-2 py-3"
+                                placeholder="Email address" required />
+                        </div>
+                        <button type="submit" class="btn btn-warning py-3 px-4 fw-bold">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                    <p class="mt-3 text-secondary">
+                        Cras interdum lectus velit nibh senectus fringilla ut.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container-fluid">
+            <div class="row justify-content-between footer-content">
+                <div class="col-lg-3 col-md-6 mb-4 footer-contact">
+                    <img src="img/kayuu-logo-white.svg" alt="KAYUU" class="footer-logo" />
+                    <p class="footer-text">3538 Torrance Blvd, Torrance, CA 90503, USA</p>
+                    <p class="footer-text">+1 123 456 7890</p>
+                    <p class="footer-text">info@example.com</p>
+                    <a href="#" class="footer-link">Visit Our Store</a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 footer-links">
+                    <h5 class="footer-heading">Useful Links</h5>
+                    <ul class="footer-list">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="product.html" class="footer-link">Products</a></li>
+                        <li><a href="room.html" class="footer-link">Rooms</a></li>
+                        <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+                        <li><a href="contactus.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 footer-links">
+                    <h5 class="footer-heading">Rooms</h5>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">Living Room</a></li>
+                        <li><a href="#" class="footer-link">Bedroom</a></li>
+                        <li><a href="#" class="footer-link">Kitchen</a></li>
+                        <li><a href="#" class="footer-link">Bath Room</a></li>
+                        <li><a href="#" class="footer-link">Home Office</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4 footer-social">
+                    <h5 class="footer-heading">Stay In Touch</h5>
+                    <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">Copyright © 2025 Online Furniture Store</p>
+            <p class="footer-powered">Powered by Online Furniture Store</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="shopping-cart-popup" class="cart-sidebar">
+        <div class="cart-header">
+            <h5 class="mb-0">Shopping Cart</h5>
+            <button id="close-cart-btn" class="btn-close"></button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-items-container"></div>
+        </div>
+        <div class="cart-footer">
+            <div id="cart-buttons" class="d-grid">
+                <a href="product.html" class="btn btn-warning fw-bold py-3">CONTINUE SHOPPING</a>
+            </div>
+            <div id="checkout-buttons" style="display: none;">
+                <div id="subtotal-section" class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="fw-bold">Subtotal:</span>
+                    <span id="cart-subtotal" class="fw-bold">$0.00</span>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-warning fw-bold py-3">VIEW CART</button>
+                    <button class="btn btn-warning fw-bold py-3">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="add-to-cart-notification" class="cart-notification"></div>
+
+    <style>
+        .cart-sidebar {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100vh;
+            background: white;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+        }
+        .cart-sidebar.visible {
+            right: 0;
+        }
+        .cart-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cart-body {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .cart-footer {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        .cart-notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #f4b942;
+            color: #333;
+            padding: 12px 20px;
+            border-radius: 4px;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1060;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .cart-notification.show {
+            transform: translateX(0);
+        }
+        .cart-item {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+        @media (max-width: 768px) {
+            .cart-sidebar {
+                width: 100vw;
+                right: -100vw;
+            }
+        }
+        @media (max-width: 480px) {
+            .cart-sidebar {
+                width: 100vw;
+                right: -100vw;
+            }
+        }
+        
+        /* Force hide continue shopping when cart has products */
+        .cart-sidebar:has(.cart-item) #cart-buttons {
+            display: none !important;
+        }
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart-common.js"></script>
+    <script src="cart.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

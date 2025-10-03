@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Online Furniture Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="bg-white border-bottom">
+        <div class="container-fluid px-5">
+            <div class="d-flex align-items-center py-4">
+                <a href="index.html">
+                    <img src="img/kayuu-logo-dark.svg" alt="KAYUU logo" style="width: 140px" />
+                </a>
+                <nav class="d-none d-lg-block ms-auto">
+                    <ul class="list-unstyled d-flex gap-4 m-0">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="product.html" class="text-warning text-decoration-none fw-bold">Products</a></li>
+                        <li><a href="room.html" class="text-muted text-decoration-none">Rooms</a></li>
+                        <li><a href="aboutus.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li><a href="contactus.html" class="text-muted text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="cart d-none d-lg-block position-relative ms-4 cart-icon">
+                    <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
+                    <span
+                        class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
+                </div>
+                <div class="d-lg-none d-flex align-items-center gap-3 ms-auto">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
+                        <span
+                            class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
+                    </div>
+                    <button class="btn btn-light border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-bars text-muted fs-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active text-warning fw-bold" aria-current="page"
+                        href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="room.html">Rooms</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="products-section py-5">
+            <div class="container">
+                <div class="d-flex justify-content-end align-items-center mb-4">
+                    <label for="sort-by" class="form-label text-secondary me-2 mb-0">Sort by:</label>
+                    <select id="sort-by" class="form-select w-auto">
+                        <option value="default" selected>Default</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Name: A-Z</option>
+                        <option value="name-desc">Name: Z-A</option>
+                    </select>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 product-grid" id="product-list-container">
+                </div>
+            </div>
+        </section>
+
+    <section class="newsletter-promo py-5 bg-light">
+        <div class="container rounded shadow-sm bg-white overflow-hidden p-0">
+            <div class="row g-0">
+                <div class="col-12 col-lg-6">
+                    <div class="promo-image h-100">
+                        <img src="img/newsletter-banner-img.jpg" class="img-fluid w-100 h-100 object-fit-cover"
+                            alt="Person relaxing on a couch" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-4 p-lg-5 text-center text-lg-start">
+                    <span class="tag text-uppercase text-warning fw-bold d-block mb-3">
+                        SUBSCRIBE TO OUR NEWSLETTER
+                    </span>
+                    <h2 class="newsletter-title fw-bold mb-4">
+                        See The Latest Collection & Get Special Offer
+                    </h2>
+                    <form action="#" method="post" class="newsletter-form d-flex flex-column flex-sm-row">
+                        <div class="flex-grow-1 mb-3 mb-sm-0 me-sm-2">
+                            <input type="email" name="email" class="form-control rounded-2 py-3"
+                                placeholder="Email address" required />
+                        </div>
+                        <button type="submit" class="btn btn-warning py-3 px-4 fw-bold">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                    <p class="mt-3 text-secondary">
+                        Cras interdum lectus velit nibh senectus fringilla ut.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer style="background-color: #000000; color: #ffffff; padding: 40px 20px;">
+        <div class="container-fluid">
+            <div class="row justify-content-between" style="padding-bottom: 25px; margin-bottom: 20px;">
+                <div class="col-lg-3 col-md-6 mb-3" style="padding-left: 20px; padding-right: 20px;"> <img
+                        src="img/kayuu-logo-white.svg" alt="KAYUU" style="width: 100px; margin-bottom: 15px;" />
+                    <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 5px;">3538 Torrance
+                        Blvd, Torrance, CA 90503, USA</p>
+                    <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 5px;">+1 123 456 7890
+                    </p>
+                    <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 10px;">info@example.com
+                    </p> <a href="#"
+                        style="color: #cccccc; font-size: 14px; font-weight: 600; text-decoration: none;">Visit Our
+                        Store</a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-3" style="padding-left: 80px; padding-right: 20px;">
+                    <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Useful Links
+                    </h5>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 6px;"><a href="index.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 6px;"><a href="product.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Products</a></li>
+                        <li style="margin-bottom: 6px;"><a href="room.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Rooms</a></li>
+                        <li style="margin-bottom: 6px;"><a href="aboutus.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 6px;"><a href="contactus.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-3" style="padding-left: 60px; padding-right: 20px;">
+                    <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Rooms</h5>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Living Room</a></li>
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Bedroom</a></li>
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Kitchen</a></li>
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Bath Room</a></li>
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Home Office</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3" style="padding-left: 100px; padding-right: 20px;">
+                    <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Stay In Touch
+                    </h5>
+                    <p
+                        style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 15px; max-width: 300px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div style="display: flex; gap: 15px;"> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                                class="fa-brands fa-facebook-f"></i></a> <a href="#"
+                            style="color: #cccccc; font-size: 18px;"><i class="fa-brands fa-twitter"></i></a> <a
+                            href="#" style="color: #cccccc; font-size: 18px;"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" style="color: #cccccc; font-size: 18px;"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            style="border-top: 1px solid #444; margin: 20px 0 0 0; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; text-align: center;">
+            <p style="color: #cccccc; font-size: 14px; margin: 0;">Copyright © 2025 Online Furniture Store</p>
+            <p style="color: #cccccc; font-size: 14px; margin: 0;">Powered by Online Furniture Store</p>
+        </div>
+    </footer>
+
+
+    <div id="shopping-cart-popup" class="cart-sidebar">
+        <div class="cart-header">
+            <h5 class="mb-0">Shopping Cart</h5>
+            <button id="close-cart-btn" class="btn-close"></button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-items-container"></div>
+        </div>
+        <div class="cart-footer">
+            <div id="cart-buttons" class="d-grid">
+                <a href="product.html" class="btn btn-warning fw-bold py-3" style="background-color: #f4b942; border: none; font-size: 14px; letter-spacing: 0.5px; text-decoration: none; color: #333;">CONTINUE SHOPPING</a>
+            </div>
+            <div id="checkout-buttons" style="display: none;">
+                <div id="subtotal-section" class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="fw-bold">Subtotal:</span>
+                    <span id="cart-subtotal" class="fw-bold">$0.00</span>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-warning fw-bold py-3" style="background-color: #f4b942; border: none; font-size: 14px; letter-spacing: 0.5px; color: #333;">VIEW CART</button>
+                    <button class="btn btn-warning fw-bold py-3" style="background-color: #f4b942; border: none; font-size: 14px; letter-spacing: 0.5px; color: #333;">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="add-to-cart-notification" class="cart-notification"></div>
+
+    <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <img id="modalProductImage" src="" class="img-fluid" alt="Product Image" style="max-height: 400px; object-fit: contain;" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 id="modalProductName" class="fw-bold mb-3" style="font-size: 2rem;"></h2>
+                            <h3 id="modalProductPrice" class="fw-bold mb-3" style="color: #333;"></h3>
+                            <p class="text-muted mb-3">& Free Shipping</p>
+                            <p id="modalProductDescription" class="text-secondary mb-4" style="line-height: 1.6;"></p>
+                            <div class="mb-3">
+                                <span class="text-muted">Category: </span>
+                                <span id="modalProductCategory" class="fw-semibold"></span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <button class="btn btn-outline-secondary" type="button" id="decreaseQty" style="width: 40px; height: 40px; border-radius: 0;">-</button>
+                                <input type="text" class="form-control text-center" value="1" id="modalProductQuantity" style="width: 80px; height: 40px; border-radius: 0;" />
+                                <button class="btn btn-outline-secondary" type="button" id="increaseQty" style="width: 40px; height: 40px; border-radius: 0;">+</button>
+                                <button id="modalAddToCartBtn" class="btn btn-warning fw-bold px-4 py-2 ms-3">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .product-card-clickable {
+            transition: all 0.3s ease;
+            border: none !important;
+            outline: none !important;
+        }
+        .product-card-clickable:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+        }
+        .product-card-clickable:hover img {
+            transform: scale(1.05);
+        }
+        .product-card-clickable:hover .product-actions {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .action-btn {
+            width: 30px !important;
+            height: 30px !important;
+            border-radius: 50% !important;
+            border: none !important;
+            background: white !important;
+            color: #666 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 16px !important;
+            cursor: pointer !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            transition: all 0.3s ease !important;
+        }
+        .action-btn:hover {
+            background: #FFC107 !important;
+            color: white !important;
+            transform: scale(1.1) !important;
+        }
+        @media (max-width: 768px) {
+            .product-actions {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Cart Sidebar Styles */
+        .cart-sidebar {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100vh;
+            background: white;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+        }
+        .cart-sidebar.visible {
+            right: 0;
+        }
+        .cart-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cart-header h5 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+        .cart-body {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .cart-footer {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        .empty-cart {
+            text-align: center;
+            color: #999;
+        }
+        .empty-cart p {
+            font-size: 16px;
+            color: #999;
+        }
+        .cart-notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #f4b942;
+            color: #333;
+            padding: 12px 20px;
+            border-radius: 4px;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1060;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .cart-notification.show {
+            transform: translateX(0);
+        }
+        .cart-item {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .cart-sidebar {
+                width: 100vw;
+                right: -100vw;
+            }
+            .container {
+                padding: 0 15px;
+            }
+            .product-grid {
+                row-gap: 2rem;
+            }
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 480px) {
+            .cart-sidebar {
+                width: 100vw;
+                right: -100vw;
+            }
+            .product-grid .col {
+                margin-bottom: 20px;
+            }
+            .form-select {
+                font-size: 14px;
+            }
+        }
+        
+        /* Force hide continue shopping when cart has products */
+        .cart-sidebar:has(.cart-item) #cart-buttons {
+            display: none !important;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart-common.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const productListContainer = document.getElementById('product-list-container');
+            const sortByDropdown = document.getElementById('sort-by');
+            let allProducts = []; // Store the full list of products
+
+            // Product Detail Modal elements
+            const productDetailModal = new bootstrap.Modal(document.getElementById('productDetailModal'));
+            const modalProductName = document.getElementById('modalProductName');
+            const modalProductImage = document.getElementById('modalProductImage');
+            const modalProductPrice = document.getElementById('modalProductPrice');
+            const modalProductDescription = document.getElementById('modalProductDescription');
+            const modalAddToCartBtn = document.getElementById('modalAddToCartBtn');
+
+            const formatPrice = (price) => {
+                return `$${price.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
+            };
+
+            const createProductCard = (product) => {
+                return `
+                    <div class="col product-item" data-id="${product.id}">
+                        <div class="card h-100 border-0 shadow-sm position-relative product-card-clickable" data-product-id="${product.id}" style="cursor: pointer; background: #f8f9fa; border-radius: 12px; transition: all 0.3s ease;">
+                            <div class="product-image p-4 text-center" style="height: 280px; display: flex; align-items: center; justify-content: center;">
+                                <img src="${product.image}" class="img-fluid" alt="${product.alt_text}" style="max-height: 100%; object-fit: contain; transition: transform 0.3s ease;" />
+                            </div>
+                            <div class="card-body text-center p-3">
+                                <p class="category text-muted mb-1 small">${product.category}</p>
+                                <h5 class="product-name fw-bold text-dark mb-2">${product.name}</h5>
+                                <h6 class="fw-bold text-dark">${formatPrice(product.price)}</h6>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn cart-btn add-to-cart-btn" title="Add to Cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button class="action-btn view-btn view-detail-btn" data-product-id="${product.id}" title="Quick View">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            };
+
+            const renderProducts = (products) => {
+                productListContainer.innerHTML = '';
+                products.forEach(product => {
+                    productListContainer.innerHTML += createProductCard(product);
+                });
+            };
+
+            const sortProducts = (sortBy) => {
+                let sortedProducts = [...allProducts]; // Create a copy to sort
+
+                if (sortBy === 'price-asc') {
+                    sortedProducts.sort((a, b) => a.price - b.price);
+                } else if (sortBy === 'price-desc') {
+                    sortedProducts.sort((a, b) => b.price - a.price);
+                } else if (sortBy === 'name-asc') {
+                    sortedProducts.sort((a, b) => a.name.localeCompare(b.name));
+                } else if (sortBy === 'name-desc') {
+                    sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
+                } else {
+                    // For "default", re-render the original unsorted array
+                    sortedProducts = [...allProducts];
+                }
+
+                renderProducts(sortedProducts);
+            };
+
+            // Fetch the products and store them
+            fetch('products.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    allProducts = data;
+                    renderProducts(allProducts); // Initial render
+                })
+                .catch(error => {
+                    console.error('Error fetching products:', error);
+                });
+
+            // Sorting functionality
+            if (sortByDropdown) {
+                sortByDropdown.addEventListener('change', (e) => {
+                    sortProducts(e.target.value);
+                });
+            }
+
+            // Product click events
+            document.addEventListener('click', (e) => {
+                // Quick View button - opens modal
+                if (e.target.classList.contains('view-detail-btn')) {
+                    e.preventDefault();
+                    const productId = e.target.getAttribute('data-product-id');
+                    const product = allProducts.find(p => p.id == productId);
+
+                    if (product) {
+                        modalProductName.textContent = product.name;
+                        modalProductImage.src = product.image;
+                        modalProductImage.alt = product.alt_text;
+                        modalProductPrice.textContent = `$${product.price.toFixed(2)}`;
+                        modalProductDescription.textContent = "Habitasse eaque wisi molestie, mollis pharetra convallis exercitation, distinctio eu arcu fugit nibh donec exercitationem, quisque imperdiet mattis proident cupiditate habitant assumenda.";
+                        document.getElementById('modalProductCategory').textContent = product.category;
+
+                        modalAddToCartBtn.setAttribute('data-product-id', product.id);
+                        document.getElementById('modalProductQuantity').value = 1;
+                        productDetailModal.show();
+                    }
+                }
+
+                // Quantity controls
+                if (e.target.id === 'decreaseQty') {
+                    const qtyInput = document.getElementById('modalProductQuantity');
+                    const qty = parseInt(qtyInput.value) || 1;
+                    if (qty > 1) {
+                        qtyInput.value = qty - 1;
+                    }
+                }
+                
+                if (e.target.id === 'increaseQty') {
+                    const qtyInput = document.getElementById('modalProductQuantity');
+                    const qty = parseInt(qtyInput.value) || 1;
+                    qtyInput.value = qty + 1;
+                }
+
+                // Add to cart button
+                if (e.target.classList.contains('add-to-cart-btn') || e.target.closest('.add-to-cart-btn')) {
+                    e.preventDefault();
+                    const productCard = e.target.closest('.product-item');
+                    const productId = productCard.getAttribute('data-id');
+                    const product = allProducts.find(p => p.id == productId);
+
+                    if (product && window.cartManager) {
+                        window.cartManager.addToCart(product);
+                    }
+                }
+
+                // Modal add to cart
+                if (e.target.id === 'modalAddToCartBtn') {
+                    const productId = e.target.getAttribute('data-product-id');
+                    const product = allProducts.find(p => p.id == productId);
+                    const quantity = parseInt(document.getElementById('modalProductQuantity').value);
+
+                    if (product && window.cartManager) {
+                        window.cartManager.addToCart(product, quantity || 1);
+                        productDetailModal.hide();
+                    }
+                }
+
+                // Product card click - navigates to detail page
+                if (e.target.closest('.product-card-clickable') && !e.target.closest('.product-actions')) {
+                    e.preventDefault();
+                    const productId = e.target.closest('.product-card-clickable').getAttribute('data-product-id');
+                    window.location.href = `product-detail.html?id=${productId}`;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
