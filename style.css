@@ -192,14 +192,19 @@ html {
 
 /* General Content Styling */
 .collection .tag,
-.testimonials .tag,
+.testimonials .tag {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    position: relative;
+}
+
 .newsletter-promo .tag {
     color: var(--primary-color);
     letter-spacing: 2px;
+    position: static;
 }
 
-.testimonials .tag::before,
-.newsletter-promo .tag::before {
+.testimonials .tag::before {
     content: "";
     position: absolute;
     left: 0;
